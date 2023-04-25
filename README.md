@@ -19,7 +19,7 @@ Adjunto una imagen del semáforo para que se pueda visualizar como fue el armado
 
 # Funcion principal
 
-void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, int cant_sonar, int tiempo_Low_Buzzer, int tiempo_High_Buzzer, int volumen){
+/*void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, int cant_sonar, int tiempo_Low_Buzzer, int tiempo_High_Buzzer, int volumen){
   digitalWrite(led1, HIGH);
   digitalWrite(led2, HIGH);
   digitalWrite(led3, HIGH);
@@ -35,7 +35,7 @@ void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, 
    digitalWrite(led2, LOW);
    digitalWrite(led3, LOW);
    delay(500); 
-}
+}*/
 
 # Funciones secundarias
 
