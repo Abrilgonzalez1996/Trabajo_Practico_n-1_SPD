@@ -1,10 +1,10 @@
-# Trabajo_Practico_n°1_SPD
+# Trabajo_Practico_n°1_SPD 🤖
 ![ArduinoTinkercad](https://user-images.githubusercontent.com/131720798/234136882-1d2f7633-e589-464f-85e3-a03955c779ee.jpg)
 
-# Integrantes
+# Integrantes 👩‍🎓 👨‍🎓 👨‍🎓
 °Abril Mariel Gonzalez Bernabeu
 
-# Proyecto: Semaforo
+# Proyecto: Semaforo 🚦 🚦 
 ![Plaqueta_Arduino](https://user-images.githubusercontent.com/131720798/234137513-a1cdb3da-d713-4e2f-8134-00bdde433fa4.png)
 
 # Descripcion
@@ -19,7 +19,7 @@ Adjunto una imagen del semáforo para que se pueda visualizar como fue el armado
 
 # Funcion principal
 
-/*void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, int cant_sonar, int tiempo_Low_Buzzer, int tiempo_High_Buzzer, int volumen){
+void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, int cant_sonar, int tiempo_Low_Buzzer, int tiempo_High_Buzzer, int volumen){
   digitalWrite(led1, HIGH);
   digitalWrite(led2, HIGH);
   digitalWrite(led3, HIGH);
@@ -35,7 +35,7 @@ Adjunto una imagen del semáforo para que se pueda visualizar como fue el armado
    digitalWrite(led2, LOW);
    digitalWrite(led3, LOW);
    delay(500); 
-}*/
+}
 
 # Funciones secundarias
 
