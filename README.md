@@ -2,7 +2,7 @@
 ![ArduinoTinkercad](https://user-images.githubusercontent.com/131720798/234136882-1d2f7633-e589-464f-85e3-a03955c779ee.jpg)
 
 # Integrantes 👩‍🎓 👨‍🎓 👨‍🎓
-- [Abril Mariel Gonzalez Bernabeu]
+[Abril Mariel Gonzalez Bernabeu]
 
 # Proyecto: Semaforo 🚦 🚦 
 ![Plaqueta_Arduino](https://user-images.githubusercontent.com/131720798/234137513-a1cdb3da-d713-4e2f-8134-00bdde433fa4.png)
@@ -18,7 +18,7 @@ El semáforo funciona de la siguiente manera: cuando se enciende, el led rojo se
 Adjunto una imagen del semáforo para que se pueda visualizar como fue el armado.
 
 # Funcion principal
-
+```c++
 void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, int cant_sonar, int tiempo_Low_Buzzer, int tiempo_High_Buzzer, int volumen){
   digitalWrite(led1, HIGH);
   digitalWrite(led2, HIGH);
@@ -36,7 +36,7 @@ void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, 
    digitalWrite(led3, LOW);
    delay(500); 
 }
-
+```
 # Funciones secundarias
 
 void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, int led1, int led2, int led3){
