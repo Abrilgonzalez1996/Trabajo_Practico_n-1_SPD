@@ -48,14 +48,14 @@ Esta funcion se encarga de emitir el sonido del buzzer:
 void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, int led1, int led2, int led3){
   //Emite sonido para ayudar a los no videntes saber en que color esta el semaforo
   for (int i = 0; i < cant_sonar; i++) {
-  	 tone(Buzzer, volumen);
-    if (i > (cant_sonar - 4) and led1 != 10){
-      juego_luces(led1, led2, led3 , tiempo_High, 1);
-    } else {
-        delay(tiempo_High);
-    }
-  	 noTone(Buzzer);
-    delay(tiempo_Low);
+   tone(Buzzer, volumen);
+   if (i > (cant_sonar - 4) and led1 != 10){
+    juego_luces(led1, led2, led3 , tiempo_High, 1);
+   } else {
+      delay(tiempo_High);
+   }
+  	noTone(Buzzer);
+   delay(tiempo_Low);
   }
 }
 ```
@@ -63,14 +63,14 @@ Esta funcion de encarga de hacer un juego de luces:
 ```c++
 void juego_luces(int led1, int led2, int led3, int tiempo, int cant_Repe){
   for (int i = 0; i < cant_Repe; i++){
-  	 digitalWrite(led1, LOW);
-    digitalWrite(led2, LOW);
-    digitalWrite(led3, LOW);
-    delay(500);
-  	 digitalWrite(led1, HIGH);
-    digitalWrite(led2, HIGH);
-    digitalWrite(led3, HIGH);
-  	 delay(tiempo - 500);   
+  	digitalWrite(led1, LOW);
+   digitalWrite(led2, LOW);
+   digitalWrite(led3, LOW);
+   delay(500);
+  	digitalWrite(led1, HIGH);
+   digitalWrite(led2, HIGH);
+   digitalWrite(led3, HIGH);
+  	delay(tiempo - 500);   
   }
 }
 ```
