@@ -23,28 +23,30 @@ Adjunto una imagen del semáforo para que se pueda visualizar como fue el armado
 # Funcion principal
 Esta funcion se encarga de encender y apagar las leds
 ```c++
-void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, int cant_sonar, int tiempo_Low_Buzzer, int tiempo_High_Buzzer, int volumen){
+void prendeYApagaLed(int led1, int led2, int led3, int tiempo_High, int tiempo_Low, int tiempo_Sumar){
   digitalWrite(led1, HIGH);
   digitalWrite(led2, HIGH);
   digitalWrite(led3, HIGH);
-  if(led1 == 13 or led1 == 10){
-  	power_buzzer(cant_sonar, tiempo_High_Buzzer, tiempo_Low_Buzzer, volumen, led1, led2, led3);
-  }
-  delay(tiempo);
+  delay(tiempo_High);
   delay(tiempo_Sumar);
-  if (led1 == 7){
-    juego_luces(led1, led2, led3, 2000, 3); 
+  if(led1 == 13){
+  	power_buzzer(15, 1000, 1000, 100, led1, led2, led3);
+  } else if(led1 == 10){
+    power_buzzer(2, 500, 2000, 1000, led1, led2, led3);
+  } else if(led1 == 7){
+    juego_luces(Led_Green1, Led_Green2, Led_Green3, 2000, 3); 
   }
-   digitalWrite(led1, LOW);
-   digitalWrite(led2, LOW);
-   digitalWrite(led3, LOW);
-   delay(500); 
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, LOW);
+  digitalWrite(led3, LOW);
+  delay(tiempo_Low); 
 }
 ```
 # Funciones secundarias
 Esta funcion se encarga de emitir el sonido del buzzer:
 ```c++
 void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, int led1, int led2, int led3){
+  //Emite sonido para ayudar a los no videntes saber en que color esta el semaforo
   for (int i = 0; i < cant_sonar; i++) {
   	tone(Buzzer, volumen);
     if (i > (cant_sonar - 4) and led1 != 10){
@@ -62,21 +64,20 @@ Esta funcion de encarga de hacer un juego de luces:
 void juego_luces(int led1, int led2, int led3, int tiempo, int cant_Repe){
   for (int i = 0; i < cant_Repe; i++){
   	digitalWrite(led1, LOW);
-    digitalWrite(led2, LOW);
-    digitalWrite(led3, LOW);
-  	delay(500);
+   digitalWrite(led2, LOW);
+   digitalWrite(led3, LOW);
+   delay(500);
   	digitalWrite(led1, HIGH);
-    digitalWrite(led2, HIGH);
-    digitalWrite(led3, HIGH);
-  	delay(tiempo - 500);
-    
+   digitalWrite(led2, HIGH);
+   digitalWrite(led3, HIGH);
+  	delay(tiempo - 500);   
   }
 }
 ```
 # Link del proyecto en tinkercad
 
-- https://www.tinkercad.com/things/9HaVi7WJy7A-copy-of-copy-of-dojo-n1/editel?sharecode=r-XE6Y5CDL-89dq2vVFMPSFs--67va51xG0f-D6MzyQ
+- https://www.tinkercad.com/things/js7R0C3lY9C-copy-of-dojo-n1/editel?sharecode=SIBF8s3YF816KvBttDEqtQewiv7351TfQkLe3LIx6vk
 
 # Link del proyecto en GDB
 
-- https://onlinegdb.com/_fcqYVoWv
+- https://onlinegdb.com/Ujhnv5lFC
