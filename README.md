@@ -2,7 +2,7 @@
 ![ArduinoTinkercad](https://user-images.githubusercontent.com/131720798/234136882-1d2f7633-e589-464f-85e3-a03955c779ee.jpg)
 
 # Integrantes 👩‍🎓 👨‍🎓 👨‍🎓
-°Abril Mariel Gonzalez Bernabeu
+[Abril Mariel Gonzalez Bernabeu]
 
 # Proyecto: Semaforo 🚦 🚦 
 ![Plaqueta_Arduino](https://user-images.githubusercontent.com/131720798/234137513-a1cdb3da-d713-4e2f-8134-00bdde433fa4.png)
@@ -51,7 +51,7 @@ void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, 
     delay(tiempo_Low);
   }
 }
-'''
+
 void juego_luces(int led1, int led2, int led3, int tiempo, int cant_Repe){
   for (int i = 0; i < cant_Repe; i++){
   	digitalWrite(led1, LOW);
@@ -65,7 +65,7 @@ void juego_luces(int led1, int led2, int led3, int tiempo, int cant_Repe){
     
   }
 }
-'''
+
 # Link del proyecto en tinkercad
 
 https://www.tinkercad.com/things/9HaVi7WJy7A-copy-of-copy-of-dojo-n1/editel?sharecode=r-XE6Y5CDL-89dq2vVFMPSFs--67va51xG0f-D6MzyQ
