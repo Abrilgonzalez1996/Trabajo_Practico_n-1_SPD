@@ -18,6 +18,7 @@ El semáforo funciona de la siguiente manera: cuando se enciende, el led rojo se
 Adjunto una imagen del semáforo para que se pueda visualizar como fue el armado.
 
 # Funcion principal
+Esta funcion se encarga de encender y apagar las leds
 ```c++
 void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, int cant_sonar, int tiempo_Low_Buzzer, int tiempo_High_Buzzer, int volumen){
   digitalWrite(led1, HIGH);
@@ -38,6 +39,7 @@ void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, 
 }
 ```
 # Funciones secundarias
+Esta funcion se encarga de emitir el sonido de buzzer:
 ```c++
 void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, int led1, int led2, int led3){
   for (int i = 0; i < cant_sonar; i++) {
@@ -51,7 +53,7 @@ void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, 
     delay(tiempo_Low);
   }
 }
-
+Esta funcion de encarga de hacer un juego de luces:
 void juego_luces(int led1, int led2, int led3, int tiempo, int cant_Repe){
   for (int i = 0; i < cant_Repe; i++){
   	digitalWrite(led1, LOW);
