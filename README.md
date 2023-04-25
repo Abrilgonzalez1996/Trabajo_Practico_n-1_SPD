@@ -39,7 +39,7 @@ void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, 
 }
 ```
 # Funciones secundarias
-Esta funcion se encarga de emitir el sonido de buzzer:
+Esta funcion se encarga de emitir el sonido del buzzer:
 ```c++
 void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, int led1, int led2, int led3){
   for (int i = 0; i < cant_sonar; i++) {
@@ -53,7 +53,9 @@ void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, 
     delay(tiempo_Low);
   }
 }
+```
 Esta funcion de encarga de hacer un juego de luces:
+```c++
 void juego_luces(int led1, int led2, int led3, int tiempo, int cant_Repe){
   for (int i = 0; i < cant_Repe; i++){
   	digitalWrite(led1, LOW);
