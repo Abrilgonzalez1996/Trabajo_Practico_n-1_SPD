@@ -40,7 +40,7 @@ void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, 
 # Funciones secundarias
 
 void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, int led1, int led2, int led3){
-  for (int i = 0; i < cant_sonar; i++) {
+  for (int i = 0; i < cant_sonar; i++) {\n
   	tone(Buzzer, volumen);
     if (i > (cant_sonar - 4) and led1 != 10){
     	juego_luces(led1, led2, led3 , tiempo_High, 1);
