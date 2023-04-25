@@ -1,8 +1,7 @@
 <h1 align= "center">Trabajo_Practico_n°1_SPD 🤖</h1>
 
-<p align="center">Fuente: https://www.iteramos.com/pregunta/34047/github-readmemd-imagen-central </p>
 <p align="center">
-  <img src= (https://www.iteramos.com/pregunta/34047/github-readmemd-imagen-central)/>
+  ![ArduinoTinkercad](https://user-images.githubusercontent.com/131720798/234136882-1d2f7633-e589-464f-85e3-a03955c779ee.jpg)
 </p>
 ![ArduinoTinkercad](https://user-images.githubusercontent.com/131720798/234136882-1d2f7633-e589-464f-85e3-a03955c779ee.jpg)
 
