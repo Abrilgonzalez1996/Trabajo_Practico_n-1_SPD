@@ -38,7 +38,7 @@ void prendeYApagaLed(int led1, int led2, int led3, int tiempo,int tiempo_Sumar, 
 }
 ```
 # Funciones secundarias
-
+```c++
 void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, int led1, int led2, int led3){
   for (int i = 0; i < cant_sonar; i++) {
   	tone(Buzzer, volumen);
@@ -65,7 +65,7 @@ void juego_luces(int led1, int led2, int led3, int tiempo, int cant_Repe){
     
   }
 }
-
+```
 # Link del proyecto en tinkercad
 
 https://www.tinkercad.com/things/9HaVi7WJy7A-copy-of-copy-of-dojo-n1/editel?sharecode=r-XE6Y5CDL-89dq2vVFMPSFs--67va51xG0f-D6MzyQ
