@@ -2,7 +2,7 @@
 
 <p align="center">Fuente: https://www.iteramos.com/pregunta/34047/github-readmemd-imagen-central </p>
 <p align="center">
-  <img src= https://www.iteramos.com/pregunta/34047/github-readmemd-imagen-central/>
+  <img src= (https://www.iteramos.com/pregunta/34047/github-readmemd-imagen-central)/>
 </p>
 ![ArduinoTinkercad](https://user-images.githubusercontent.com/131720798/234136882-1d2f7633-e589-464f-85e3-a03955c779ee.jpg)
 
