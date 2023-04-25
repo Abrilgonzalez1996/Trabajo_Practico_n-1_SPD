@@ -30,11 +30,11 @@ void prendeYApagaLed(int led1, int led2, int led3, int tiempo_High, int tiempo_L
   delay(tiempo_High);
   delay(tiempo_Sumar);
   if(led1 == 13){
-  	 power_buzzer(15, 1000, 1000, 100, led1, led2, led3);
+    power_buzzer(15, 1000, 1000, 100, led1, led2, led3);
   } else if(led1 == 10){
-      power_buzzer(2, 500, 2000, 1000, led1, led2, led3);
+     power_buzzer(2, 500, 2000, 1000, led1, led2, led3);
   } else if(led1 == 7){
-      juego_luces(Led_Green1, Led_Green2, Led_Green3, 2000, 3); 
+     juego_luces(Led_Green1, Led_Green2, Led_Green3, 2000, 3); 
   }
   digitalWrite(led1, LOW);
   digitalWrite(led2, LOW);
@@ -50,9 +50,9 @@ void power_buzzer(int cant_sonar, int tiempo_High, int tiempo_Low, int volumen, 
   for (int i = 0; i < cant_sonar; i++) {
   	 tone(Buzzer, volumen);
     if (i > (cant_sonar - 4) and led1 != 10){
-    	juego_luces(led1, led2, led3 , tiempo_High, 1);
+      juego_luces(led1, led2, led3 , tiempo_High, 1);
     } else {
-         delay(tiempo_High);
+        delay(tiempo_High);
     }
   	 noTone(Buzzer);
     delay(tiempo_Low);
