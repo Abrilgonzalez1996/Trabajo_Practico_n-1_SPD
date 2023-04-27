@@ -71,3 +71,6 @@ void juego_luces(int led, int tiempo, int cant_Repe){
 # Link del codigo del proyecto en GDB
 
 - https://onlinegdb.com/vj76tVpMA
+
+#Fuente
+- ChatGPT
