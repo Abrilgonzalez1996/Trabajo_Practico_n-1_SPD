@@ -64,13 +64,13 @@ void juego_luces(int led, int tiempo, int cant_Repe){
   }
 }
 ```
-# Link del proyecto en tinkercad
+# Link al proyecto en tinkercad
 
 - https://www.tinkercad.com/things/eFJjnyoYpGR-copy-of-original/editel?sharecode=CXT_Z8BpmwZd4BCv30N3PDvQAlwPVJXEZdbr5kalpS4
 
-# Link del codigo del proyecto en GDB
+# Link al codigo del proyecto en GDB
 
 - https://onlinegdb.com/vj76tVpMA
 
-## Fuentes
+# Fuentes
 - ChatGPT
