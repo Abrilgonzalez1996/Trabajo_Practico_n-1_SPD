@@ -8,7 +8,7 @@
 - Abril Mariel Gonzalez Bernabeu
 
 # Proyecto: Semaforo 🚦 🚦 🚦 
-![Plaqueta_Arduino](https://user-images.githubusercontent.com/131720798/234137513-a1cdb3da-d713-4e2f-8134-00bdde433fa4.png)
+![Plaqueta_Arduino](https://github.com/Abrilgonzalez1996/Trabajo_Practico_n-1_SPD/blob/45df62a3c43ee24fae2548cfd252fccdbffc7b82/Img/Original.png)
 
 # Descripcion 
 El objetivo de este proyecto fue programar un semáforo utilizando una placa Arduino. El semáforo tenía como finalidad controlar el tráfico vehicular y peatonal tanto para los videntes y no videntes en una intersección.
