@@ -72,5 +72,5 @@ void juego_luces(int led, int tiempo, int cant_Repe){
 
 - https://onlinegdb.com/vj76tVpMA
 
-#Fuente
+# Fuente
 - ChatGPT
