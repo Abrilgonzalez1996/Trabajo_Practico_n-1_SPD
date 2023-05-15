@@ -66,7 +66,7 @@ void juego_luces(int led, int tiempo, int cant_Repe){
 ```
 # Link al proyecto en tinkercad
 
-- https://www.tinkercad.com/things/eFJjnyoYpGR-copy-of-original/editel?sharecode=CXT_Z8BpmwZd4BCv30N3PDvQAlwPVJXEZdbr5kalpS4
+- https://www.tinkercad.com/things/eFJjnyoYpGR
 
 # Link al codigo del proyecto en GDB
 
